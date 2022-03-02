@@ -1,5 +1,8 @@
 <?php
 
+//se crea base de datos para las migraciones
+//se crean los campos para el proyecto como descricion, precio y stock
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

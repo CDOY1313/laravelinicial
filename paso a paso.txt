@@ -1,0 +1,31 @@
+use Illuminate\Support\Facades\Schema;
+Schema::defaultStringLength(191);
+
+php artisan make:model Articulo
+php artisan make:migration creat_articulos_table
+
+        Schema::create('articulos', function (Blueprint $table) {
+            $table->id();
+            $table->string('descripcion');
+            $table->float('precio');
+            $table->integer('stock');
+            $table->timestamps();
+        });
+
+APIREST LARAVEL 9
+
+aplicacion veu JS - app cliente
+
+//se utiliza la fachada Schema para evitar errores en migraciones
+// se crea a base en mi caso phpMyAdmin
+
+//se crea modelos de Articulo 
+//protected para los campos creados
+//se crea base de datos para las migraciones
+//se crean los campos para el proyecto como descricion, precio y stock
+
+//se crea un controlador de tipo resouerce
+//se optiene los datos del modelo articulo y se ejecuta las acciones cdel controlador como stor, update y destroy 
+
+//se configuran las rutas con api.php
+//con los atributos se utiliza get,post,put,delete dependiendo de la accion a ejecutar
